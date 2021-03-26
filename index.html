@@ -1,0 +1,515 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <title></title>
+ <link rel="shortout icon" href="Images/b0f130a3-85ff-4bcc-acec ae92d9ca28b7.png" /> 
+ <meta charset="utf-8"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"/>  <meta name="description" content=""/>
+ <meta name="author" content=""/>
+ <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+ <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font
+awesome/4.7.0/css/font-awesome.min.css"/>
+ <meta name="viewport" content="width=device-width, initial scale=1"/>
+ <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap. min.css"/>
+ <script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.j s"></script>
+ <script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.mi n.js"></script>
+<link rel="stylesheet"
+href="https://www.w3schools.com/w3css/4/w3.css"/>  <style>
+
+ .navbar {
+ margin-bottom: 0px;
+ border-radius: 0;
+ }
+
+
+
+
+.vl {
+ border-left: 6px solid green;
+ height: 10px;
+}
+ .dropdown:hover .dropdown-menu
+ {
+ display: block;
+ border-top: none;
+ }
+
+ </style>
+ <asp:ContentPlaceHolder id="head" runat="server">  </asp:ContentPlaceHolder>
+</head>
+<body style="background-position:center;
+background-image: none; background-repeat: no-repeat; background attachment: fixed">
+ <form id="form1" runat="server">
+
+
+ <style>
+ .text101
+ {
+ width:300px;
+
+ border:none;
+ outline:none;
+ border-bottom:1px solid black;
+ }
+
+ </style>
+ <div class="container">
+
+ <div class="modal fade" id="myModal" role="dialog">  <div class="modal-dialog" >
+
+
+ <!--style for modelbox-->
+
+ <div class="modal-content">
+ <div class="modal-header" style="background-color:#203027;">  <center><h2 style="color:white;">SignUp</h2></center>  <button type="button" class="close" data
+dismiss="modal">&times;</button>
+
+ </div>
+ <div class="modal-body">
+ <div class="container">
+
+
+ <p class="p">Username:</p>
+ <asp:TextBox ID="TextBox1" class="text101"  runat="server"></asp:TextBox>
+ <br />
+ <p class="p">Password:</p>
+ <asp:TextBox ID="TextBox2" class="text101"  runat="server"></asp:TextBox>
+ <br />
+ <p class="p">Conform Password:</p>
+ <asp:TextBox ID="TextBox3" class="text101"  runat="server"></asp:TextBox>
+ <br />
+ <p class="p">Email Id:</p>
+ <asp:TextBox ID="TextBox4" class="text101"  runat="server"></asp:TextBox>
+ <br />
+ <p class="p">Mobile No.:</p>
+ <asp:TextBox ID="TextBox5" class="text101"  runat="server"></asp:TextBox>
+ <br />
+
+ <style>
+ .bt1
+{
+ width:15%;
+ height:50px;
+ background-color:green;
+ border:none;
+ padding-top:10px;
+ margin:20px 0 0 20px;
+ font-size:20px;
+ color:black;
+ text-align:center;
+ border-radius:5px;
+ }
+ </style>
+ <asp:Label ID="Label1" runat="server"></asp:Label>  <asp:Button ID="Button1" class="bt1" runat="server" Text="Submit" Font-Bold="True" />
+
+ <asp:Button ID="Button2" class="bt1"  runat="server" Text="Cancel" Font-Bold="True" BackColor="#CC3300" />
+
+ </div>
+
+
+ </div>
+ </div>
+
+ </div>
+ </div>
+
+</div>
+ <style>
+ .p
+ {
+ font-size:17px;
+ font-style:italic;
+ color:black;
+ }
+
+ </style>
+ <div class="container">
+
+
+ <div class="modal fade" id="Div1" role="dialog">
+ <div class="modal-dialog" >
+
+
+
+ <!--style for modelbox-->
+
+ <div class="modal-content">
+ <div class="modal-header" style="background-color:#203027;">  <center><h2 style="color:white;">SignIn</h2></center>  <button type="button" class="close" data
+dismiss="modal">&times;</button>
+
+ </div>
+ <div class="modal-body">
+ <div class="container">
+
+
+ <p class="p">Username:
+ <asp:TextBox ID="TextBox6" class="text101"  runat="server"></asp:TextBox></p>
+ <br />
+ <br />
+ <p class="p">Password:
+ <asp:TextBox ID="TextBox7" class="text101"  runat="server"></asp:TextBox></p>
+ <br />
+
+
+
+ <asp:Button ID="Button3" class="bt1" runat="server" Text="Submit" />
+
+ <asp:Button ID="Button4" class="bt1" runat="server" Text="Cancel" BackColor="#CC0000" />
+
+
+ </div>
+
+ </div>
+
+ </div>
+ </div>
+
+</div>
+</div>
+
+
+ <nav class="navbar navbar-inverse" style="background color:#0b0939;">
+ <div class="container-fluid" >
+ <!---image for logo-->
+ <a class="navbar-brand" href="#">
+ <img src="Images/film-158157_1280.png" width="90" height="90"/>
+ </a>
+ <!-- for search button-->
+ <div class="col-sm-7" style="margin:10px 0 0 170px;">  <div class="input-group"style="background color:black;color:red;">
+ <input type="text" class="form-control" placeholder="Search"/>  <div class="input-group-btn">
+ <asp:Button ID="Button5" class="btn btn-default" runat="server" Text="Search" OnClick="Button5_Click"  style="background-color:black;color:red;"/>  <!--button class="btn btn-default" type="submit"-->  <i class="glyphicon glyphicon-search"></i>  </!--button>
+ </div>
+ </div>
+ </div>
+ <br />
+ <!--end-->
+
+ <!---ul for login and signuppart-->
+ <ul class="nav navbar-nav navbar-right">
+ <li><a href="#" data-toggle="modal" data
+target="#myModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+ <li><a href="#" data-toggle="modal" data-target="#Div1">  <span class="glyphicon glyphicon-log-in">
+ </span> Login</a></li>
+ </ul>
+ <div class="navbar-header">
+
+ <button type="button" class="navbar-toggle" data toggle="collapse" data-target="#myNavbar">
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ </button>
+
+ </div>
+
+ <div class="collapse navbar-collapse" id="myNavbar">  <ul class="nav navbar-nav">
+ <li style="color:#a1d509;font-size:30px;font family:Alaska;">TicketWay</li>
+ <li class="active"><a href="home1.aspx">Home</a></li>
+ <li class="dropdown">
+ <a class="dropdown-toggle" data-toggle="dropdown" href="moviespanel.aspx">Movies
+ <span class="caret"></span></a>
+ <ul class="dropdown-menu"
+ style="background-color:#0b0939;width:1000px;  height:350px;
+
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  z-index: 1;
+ text-decoration:none;">
+ <div class="panel-default">
+ <div class="panel-body">
+ <div class="row">
+ <div class="col-sm-4">
+ <h2>
+ <a style="text-decoration:none;" href="moviespanel.aspx"> Bollywood movie</a>
+ </h2>
+ <hr />
+
+<a style="color:green;font
+size:20px;text-decoration:none;"href="#">Latest</a><br />  <a style="color:green;font size:20px;text-decoration:none;"href="#">Most booking</a><br />  <a style="color:green;font size:20px;text-decoration:none;"href="#">Blockbuster</a><br/>  <a style="color:green;font size:20px;text-decoration:none;"href="#">IMAX </a><br/>  <a style="color:green;font size:20px;text-decoration:none;"href="#">UPCOMING</a>
+
+ </div>
+ <div class="col-sm-4">
+ <h2>
+ Tollywoood movie
+ <hr />
+
+<a style="color:green;font
+size:20px;text-decoration:none;"href="#">Latest</a><br />  <a style="color:green;font size:20px;text-decoration:none;"href="#">Most booking</a><br />  <a style="color:green;font size:20px;text-decoration:none;"href="#">Blockbuster</a><br/>  <a style="color:green;font size:20px;text-decoration:none;"href="#">IMAX </a><br/>  <a style="color:green;font size:20px;text-decoration:none;"href="#">UPCOMING</a>
+ </h2>
+ </div>
+ <div class="col-sm-4">
+ <h2>
+ Hollywood movie
+ <hr />
+
+<a style="color:green;font
+size:20px;text-decoration:none;"href="#">Latest</a><br />  <a style="color:green;font size:20px;text-decoration:none;"href="#">Most booking</a><br />  <a style="color:green;font size:20px;text-decoration:none;"href="#">Blockbuster</a><br/>  <a style="color:green;font size:20px;text-decoration:none;"href="#">IMAX </a><br/>  <a style="color:green;font size:20px;text-decoration:none;"href="#">UPCOMING</a>
+ </h2>
+ </div>
+ </div>
+ </div>
+ <hr />
+ </div>
+ </ul>
+ </li>
+
+ <li>
+ <a href="bollymov.aspx">Bollywood
+ </a>
+
+ </li>
+ <li>
+ <a href="hollywood.aspx">Hollywood
+ </a>
+ <ul class="dropdown
+menu"style="width:600px;height:300px;background-color:white;">  <div class="row">
+ <div class="col-sm-4" style="border-left:1px solid black;">
+ <h4></h4>
+
+
+ <h4></h4>
+
+ </div>
+ <div class="col-sm-4" style="border-left:1px solid black;">
+ <h4></h4>
+
+ <h4></h4>
+
+ </div>
+ <div class="col-sm-4" style="border-left:1px solid black;">
+ <h4></h4>
+
+ <h4></h4>
+
+ </div>
+ </div>
+
+ </ul>
+ </li>
+ </ul>
+
+
+
+ <!---ul for shopping details-->
+
+
+ <ul class="nav navbar-nav navbar-right">
+ <li>
+ <a href="offers.aspx">
+ <span class="glyphicon glyphicon-gift"></span> Offers</a>
+
+ </li>
+ <li class="dropdown">
+ <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+ <span class="glyphicon glyphicon-list"></span>Gift  <span class="caret"></span>
+ </a>
+ <ul class="dropdown-menu" style="background-position:  center center; height:600px; width:1000px; background color:#0b0939;">
+
+
+ <center>
+ <h1 style="color:#088db1;">latest gift</h1>
+ </center>
+
+
+ </ul>
+ </li>
+ <li>
+ <a href="welcome.aspx">
+ <span class="glyphicon glyphicon-user"></span>Wel  come
+ </a>
+
+ </li>
+
+ </ul>
+
+ </div>
+ </div>
+</nav>
+
+ <!---social networking website--> <style>
+#a1 {
+ text-decoration: none;
+ vertical-align: middle;
+ text-align: center;
+ line-height: 3;
+ overflow:hidden;
+}
+p {
+ color: white;
+ position: relative;
+ left: -10px;
+ font-family: 'Lato';
+}
+#sidebar {
+ height: 0px;
+ width: 10px;
+ position: fixed;
+ text-align: center;
+ padding: 10px;
+ margin-left: 10px;
+ margin-top:280px;
+
+}
+p i {
+ left: 30px;
+ position: relative;
+ vertical-align: middle;
+ text-align: center;
+ font-size: 24px;
+}
+.social {
+ margin-left: -200px;
+ width: 230px;
+ padding: 0;
+ display: inline-table;
+ height: 0px;
+ background-color: rgba(128, 128, 128, 0.73);  -moz-transition-property: margin-left;  -moz-transition-duration: 0.2s;
+ -moz-transition-delay: 0.2s;
+ -ms-transition-property: margin-left;  -ms-transition-duration: 0.2s;
+ -ms-transition-delay: 0.2s;
+ -o-transition-property: margin-left;  -o-transition-duration: 0.2s;
+ -o-transition-delay: 0.2s;
+ -webkit-transition-property: margin-left;  -webkit-transition-duration: 0.2s;  -webkit-transition-delay: 0.2s;
+ box-shadow: 0px 0px 6px 0px #3E3D3D;  cursor: pointer;
+}
+.social:hover {
+ margin-left: -30px;
+ width: 300px;
+ background-color: #3b5998;
+}
+.facebook:hover {
+ background-color: #3b5998;
+}
+.twitter:hover {
+ background-color: #4099FF;
+}
+.google:hover {
+ background-color: #DD4B39;
+}
+.linkedin p i {
+ left: 20px;
+}
+.google p i {
+ left: 35px;
+}
+.youtube p i {
+ left: 18px;
+}
+.youtube:hover {
+ background-color: #E52D27;
+}
+.linkedin:hover {
+ background-color: #0976B4;
+}
+ </style>
+
+ <div id="sidebar">
+ <div class="social facebook">
+ <a id="a1" href=" https://www.facebook.com " target="_blank">  <p>Like on Facebook <i class="fa fa-facebook "></i> </p>  </a>
+ </div>
+ <div class="social twitter">
+ <a id="a1" href=" https://www.twitter.com " target="_blank">  <p>Follow on Twitter<i class="fa fa-twitter"></i> </p>  </a>
+ </div>
+ <div class="social google">
+ <a id="a1" href=" https://www.plus.google.com " target="_blank">
+ <p>&nbspAdd on Google+<i class="fa fa-google-plus"></i> </p>  </a>
+ </div>
+ <div class="social youtube">
+ <a id="a1" href=" https://www.youtube.com " target="_blank">  <p>Subscribe on Youtube<i class="fa fa-youtube-play"></i> </p>  </a>
+ </div>
+ <div class="social linkedin">
+ <a id="a1" href=" https://www.linkedin.com " target="_blank">  <p>Connect on LinkedIn<i class="fa fa-linkedin"></i> </p>  </a>
+ </div>
+</div>
+
+ <!--STYLE SHEET FOR SIDE MENU-->
+
+
+ <div class="content">
+ <asp:ContentPlaceHolder id="ContentBody" runat="server">
+ </asp:ContentPlaceHolder>
+ </div>
+   <footer class="page-footer font-small blue pt 4"style="background-color:#151313;">
+ <!-- Footer Links -->
+ <div class="container-fluid text-center text-md-left">  <div class="row">
+
+ <h4 >TicketWay.com</h4>
+ <hr />
+ <div class="col-md-3 mb-md-0 mb-3">  <h5 class="text-uppercase"><u>BASIC</u></h5>
+ <ul class="list-unstyled">
+ <li>
+ <a href="home1.aspx">>>HOME</a>
+ </li>
+ <li>
+ <a href="about1.aspx">>>ABOUT</a>  </li>
+ <li>
+ <a href="feedback.aspx">>>FEEDBACK</a>  </li>
+ <li>
+ <a href="payment.aspx">>>Payment</a>  </li>
+ </ul>
+ </div>
+
+ <div class="col-md-3 mb-md-0 mb-3">  <h5 class="text-uppercase" ><u>MOVIES</u></h5>
+ <ul class="list-unstyled">
+ <li>
+ <a href="hollywood.aspx">>>HOLLYWOOD</a>  </li>
+ <li>
+ <a href="bollymov.aspx">>>BOLLYWOOD</a>  </li>
+ <li>
+ <a href="Tollywood.aspx">>>TOLLYWOOD</a>  </li>
+ <li>
+ <a href="#!">>>BHOJPURI</a>
+ </li>
+ </ul>
+ </div>
+
+ <div class="col-md-3 mb-md-0 mb-3">  <h5 class="text-uppercase"><u>OFFERS</u></h5>
+ <ul class="list-unstyled">
+ <li>
+ <a href="#!">>>LATEST</a>
+ </li>
+ <li>
+ <a href="#!">>>SEASON</a>
+ </li>
+ <li>
+ <a href="#!">>>BLOCKBUSTER</a>  </li>
+ <li>
+ <a href="#!">>>SPECIAL SUNDAY</a>  </li>
+ </ul>
+ </div>
+ <div class="col-md-3 mb-md-0 mb-3">  <h5 class="text-uppercase" ><u>FOLLOW US</u></h5>
+ <ul class="list-unstyled">
+ <li>
+ <a href="#!">>>FACEBOOK</a>
+ </li>
+ <li>
+ <a href="#!">>>TWITER</a>
+ </li>
+ <li>
+ <a href="#!">>>GOOGLE</a>
+ </li>
+ <li>
+ <a href="#!">>>INSTGRAM</a>
+ </li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="row">
+
+ <center>
+ <hr style="width:800px;"/>  <img src="offersimage/sk2.jpg"  style="height:100px;width:100px;  border-radius:50px;"/>  <h1>DEVELOPER</h1>
+ <h3>Sikandar Pandit</h3>
+ <h2>Contact</h2>
+ <h4>MOBILE:8584086584</h4>  <h4>EMAIL ID:skhackergh@gmail.com</h4>  </center>
+ </div>
+ <!-- Copyright -->
+ <div class="footer-copyright text-center py-3" style="padding:30px;">© 2018 Copyright:
+
+ <a href="home1.aspx"> ticketWay.com</a>
+ </div>
+ </div>
+ </footer>
+ </form>
+</body>
+</html>

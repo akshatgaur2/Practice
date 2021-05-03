@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Movie seat booking page - Joker</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/prima.css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\index.html">Jordush</a></h1>
+      <h2>INOX : Seat booking</h2>
+    </div>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Search:</legend>
+        <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
+        <input type="submit" id="sf_submit" value="submit">
+      </fieldset>
+    </form>
+    <nav>
+		<ul>
+			<li><a href="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\pages\gallery.html">Select Movie</a></li>
+			<li><a href="#">Plays/Dramas</a></li>
+			<li><a href="#">Change Location</a></li>
+			<li><a href="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\pages\gallery 2.html">Binge online</a></li>
+		</ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\hall seat trial\images\Joker Poster.jpeg" alt="">
+        <figcaption>
+          <h3 style="font-size: 30px;">Joker</h3>
+          <p> Set in 1981, it follows Arthur Fleck, a failed clown and stand-up comedian whose descent into insanity and nihilism inspires a violent counter-cultural revolution against the wealthy in a decaying Gotham City</p>
+          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- main content -->
+    <div id="intro">
+    <section class="clear">
+    <form class='form-inline selectionForm'>
+			<div class="form-group required">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id='name' placeholder="Dukhyant" required="required"/>
+			</div>
+			<style>
+				#name {margin-left: 80px; margin-bottom: 10px;  }
+			</style>
+			<style>
+				#seats {margin-left: 5px;}
+			</style>
+			<div class="form-group required">
+				<label for="seats">Number Of Seats:</label>
+				<input type="number" id='seats' class="form-control" placeholder="3" required="required"/>
+			</div>
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-lg submitBtn" id="submitSelection">Start Selecting</button>
+			</div>
+			<style>
+				#submitSelection {background-color: #585757;  }
+			</style>
+			<div class="text-center">
+				<font color="Red"><label class="error"></label></font>
+			</div>
+
+		</form>
+		<div class="screen-ui">
+			<div id="screen">
+				<font color="white">SCREEN</font>		
+			</div>
+			
+			<table class="table" id="table-screen">
+				<thead id="screen-head">
+					<tr>
+						<script type="text/template" id='table-screen-header'>
+			   				<% _.each(_.range(0,columns+1),function(item){ %>
+			   					<% if(item==0) {%>
+			            			<th></th>
+			            		<% } else {%>
+			            			<th><%= item %></th>
+			            		<% } %>
+			    			<% }) %>
+			    		</script>
+		    		</tr>
+		    	</thead>
+		    	<tbody id="screen-body">
+		    		<script type="text/template" id='table-screen-body'>
+		    			<% _.each(rows,function(row){ %>
+		    				<tr id='table-screen-row'>
+		    					<td><%=row%></td>
+		    					<% _.each(_.range(1,columns+1),function(column){ %>
+		    						<% var id=(_.indexOf(rows,row)*columns)+column; var reservedSeats=JSON.parse(localStorage.getItem('ReservedSeats')); if(reservedSeats!=null && _.indexOf(reservedSeats,String(id))!=-1) {%>
+			            				<td><img src="img/reserved-seat.png" class="reserved-seat" id="<%=id%>"/></td>
+			            			<% }else {%>
+			            				<td><img src="img/empty-seat.png" class="empty-seat" id="<%=id%>"/></td>		       
+			            			<% }}) %>
+	    					</tr>
+	    				<% }) %>
+					</script>	
+		    	</tbody>
+			</table>
+
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-lg submitBtn" id="confirmSelection">Confirm Selection</button>
+				<div class="screen-map">
+				<label for="empty-seat-map">Selected Seat</label>
+				<img src="img/booked-seat.png" class="booked-seat-map" id="booked-seat-map">
+				<br/>
+				<label for="">Reserved Seat</label>
+				<img src="img/reserved-seat.png" class="reserved-seat-map" id="reserved-seat-map">
+				<br/>
+				<label for="">Empty Seat</label>
+				<img src="img/empty-seat.png" class="empty-seat-map" id="empty-seat-map">
+			</div>	
+			</div>
+					
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Number of Seats</th>
+						<th>Seats</th>
+					</tr>
+				</thead>
+				<tbody id="ticket-sold-info">
+					<script type="text/template" id='table-ticket-info'>
+						<% _.each(items,function(item){%>
+							<tr>
+								<td><%-item.names%></td>
+								<td><%-item.numbers%></td>
+								<td><%-item.seats%></td>
+							</tr>
+						<%})%>
+					</script>
+				</tbody>
+			</table>
+		</div>
+	<script type="text/javascript" src="js/prima.js"></script>
+</section>
+</div>
+
+  <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## 
+    <div id="homepage" class="last clear">
+      <section class="one_quarter">
+        <h2 class="title">From The Blog</h2>
+        <article>
+          <header>
+            <h2>Post Title</h2>
+            <address>
+            <a href="#">Admin</a>, domainname.com
+            </address>
+            <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
+          </header>
+          <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
+          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+        </article>
+      </section>
+      <section class="one_quarter">
+        <h2 class="title">Quick Links</h2>
+        <nav>
+          <ul>
+            <li><a href="#">Lorem ipsum dolor sit</a></li>
+            <li><a href="#">Amet consectetur</a></li>
+            <li><a href="#">Praesent vel sem id</a></li>
+            <li><a href="#">Curabitur hendrerit est</a></li>
+            <li class="last"><a href="#">Sed a nulla urna</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="two_quarter lastbox">
+        <h2 class="title">About US</h2>
+        <img class="imgl" src="images/demo/130x130.gif" width="130" height="130" alt="">
+        <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.</p>
+        <footer class="more"><a href="#">Read More &raquo;</a></footer>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_right">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Jordush</a></p>
+  </footer>
+</div>
+-->
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>Movie Booking Proj Trial</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul class="nospace">
+        <li><i class="fas fa-mobile-alt rgtspace-5"></i> +91 9001 894 191</li>
+        <li><i class="far fa-envelope rgtspace-5"></i> info@jordush.com</li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace">
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="mailto:help@jordush.com" title="Help Centre"><i class="far fa-life-ring"></i></a></li>
+        <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+        <li id="searchform">
+          <div>
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Quick Search:</legend>
+                <input type="text" placeholder="Enter search term&hellip;">
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </fieldset>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <section id="ctdetails" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="nospace clear">
+      <li class="one_quarter first">
+        <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +91 9001 894 191</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="mailto:help@jordush.com"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> help@jordush.com</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Mon. - Sat.:</strong> 08.00am - 5.00pm</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="https://www.srmist.edu.in/"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong> Directions to <a href="https://www.google.com/maps/place/SRM+Institute+of+Science+and+Technology/@12.823082,80.0420528,17z/data=!3m1!4b1!4m5!3m4!1s0x3a52f712b82a78d9:0xfdb944a3aee53831!8m2!3d12.823082!4d80.0442415">our location</a></span></div>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay padtop" style="background-image:url('');"> 
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <h1><a href="index.html">JORDUSH</a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Filter</a>
+          <ul>
+            <li><a href="index.html">Location</a></li>
+            <li><a href="index.html">Genre</a></li>
+            <li><a href="index.html">Language</a></li>
+            <li><a href="index.html">Parental Guidance</a></li>
+            <li><a href="index.html">Latest</a></li>
+            <li><a href="index.html">Animated</a></li>
+            <!--
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+            <li><a href="pages/font-icons.html">Font Icons</a></li> 
+            -->
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Screening type</a>
+          <ul>
+            <li><a href="pages/gallery.html">Theater</a></li>
+            <li><a class="drop" href="#">Special Screening</a>
+              <ul>
+                <li><a href="#">Mini-hall</a></li>
+                <li><a href="#">Special Events</a></li>
+                <li><a href="#">Other</a></li>
+              </ul>
+            </li>
+            <li><a href="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\pages\gallery 2.html">Watch now</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Plays/Dramas</a></li>
+        <li><a href="#">Events</a></li>
+        <!-- <li><a href="#">Link Text</a></li> -->
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h3 class="heading">JORDUSH : Cinema At Home</h3>
+      <p>Hii there!! Here you can easily book-tickets and mini-halls, binge online and Party watch with friends!!! </p>
+      <footer>
+        <ul class="nospace inline pushright">
+          <li><a class="btn" href="#">Interviews</a></li>
+          <li><a class="btn inverse" href="#">Live Events</a></li>
+        </ul>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <section id="introblocks">
+      <ul class="nospace group grid-3">
+        <li class="one_third">
+          <figure><a class="imgover" href="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\pages\gallery.html"><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\images\Theatre.jpeg" alt=""></a>
+            <figcaption><a href="#">Book Movie Ticket</a></figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\pages\gallery 2.html"><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\images\img\watchonline.jpg" alt=""></a>
+            <figcaption><a href="#">Watch Classics</a></figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="#"><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\images\img\mini.jpeg" alt=""></a>
+            <figcaption><a href="#">Special Booking</a></figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay" style="background-image:url('');">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <figure class="one_half first">
+      <h6 class="heading" style="font-size:1.8vw; color: #8EC837" >Our Future Aspects For The Projects</h6>
+      <br>
+      <ol type= "1" class="btmspace-30" style="font-size:1.2vw"> 
+        <li>We would like to extend our project to mobile apps for all mobile OS</li>
+        <li>We intend to be in par with Netflix and other streaming services </li>
+        <li>We intend to continue our focus on product development</li> 
+        <li>We plan to enhance our production processes</li>
+        <li>We intend to penetrate new industries, expand sales network and enhance brand awareness</li>
+      </ol>
+      
+    </figure>
+    <div class="one_half last"><a ><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\images\img\Future.jpeg" alt=""></a></div>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<div class="bgded overlay" style="background-image:url('');">
+  <section id="testimonials" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <figure><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\images\img\watchon.jfif" alt=""></figure>
+      <h6 class="heading font-x2">About Us</h6>
+      <em>Movie Booking And Watching Portal</em>
+      <blockquote>Jordush is our website for Software Engineering Project Management.
+        
+        This page has a unique feel, thanks to the deconstructed action figures representing the founders, Akshat Gaur, Shaswat Srivastava and Dushyant Betala.
+        
+        We are just getting started...</blockquote>
+    </article>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <p class="nospace font-xs">Movie Ticket Booking System</p>
+      <h6 class="heading">About The Developers</h6>
+    </div>
+    <ul id="latest" class="nospace group sd-third">
+      <li class="one_third first">
+        <article>
+          <figure><a class="imgover" href="https://www.linkedin.com/in/akshat-gaur-2906851a5/"><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\images\img\akk.jpeg" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Akshat Gaur</h6>
+              <ul class="nospace meta clear">
+                <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+              </ul>
+            </figcaption>
+          </figure>
+          <p>RA1911027010051</p>
+          <p>CSE-BD</p>
+          <p>N-1</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <figure><a class="imgover" href="https://www.linkedin.com/in/shaswat-srivastava-03a67118b/"><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\images\img\Shaswatppic.jfif" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Shaswat Srivastava</h6>
+              <ul class="nospace meta clear">
+                <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+              </ul>
+            </figcaption>
+          </figure>
+          <p>RA1911027010061</p>
+          <p>CSE-BD</p>
+          <p>N-1</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <figure><a class="imgover" href="http://www.linkedin.com/in/dushyant-betala-277b8118b"><img src="C:\Users\MRIGANK GAUR\Downloads\Ak acadmics\Sem 4\SEPM\Practice\homepage - spourmo\images\img\Dus.jpeg" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Dushyant Betala</h6>
+              <ul class="nospace meta clear">
+                <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+              </ul>
+            </figcaption>
+          </figure>
+          <p>RA1911027010065</p>
+          <p>CSE-BD</p>
+          <p>N-1</p>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Bottom Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div class="group btmspace-50">
+        <div class="one_quarter sd-third">
+          <ul class="faico clear">
+            <li><a class="faicon-facebook" href="https://www.facebook.com/akshat.gaur.9210/"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="faicon-google-plus" href="mailto:help@jordush.com"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a class="faicon-linkedin" href="https://www.linkedin.com/in/shaswat-srivastava-03a67118b/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a class="faicon-twitter" href="https://twitter.com/DushyantBetala"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <!-- ################################################################################################ -->
+      <hr class="btmspace-50">
+      <!-- ################################################################################################ -->
+      <nav>
+        <ul class="nospace">
+          <li><a href="index.html"><i class="fas fa-lg fa-home"></i></a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <p class="fl_right">Copyright &copy; 2021 - All Rights Reserved - <a href="#">Jordush</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Bottom Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

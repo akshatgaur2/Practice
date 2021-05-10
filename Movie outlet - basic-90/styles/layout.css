@@ -54,6 +54,9 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border:1px solid #4b4b4b; padding:6px; margin-right: 135px; margin-left: 75px;}
 
 
+.btn2, .btn.inverse2:hover{color:#FFFFFF; background-color:#8EC837; border-color:#8EC837; padding:6px;}
+.btn2:hover, .btn.inverse2{color:inherit; background-color:transparent; border:1px solid #4b4b4b; padding:6px; margin-left: 1px;}
+
 .btn{border-radius:1000px;}
 
 #footer input, #footer button{border-radius:12px;}

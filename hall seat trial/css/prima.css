@@ -62,7 +62,7 @@
 #pageintro footer{margin-top:50px;}
 
 .btn2, .btn2.inverse:hover{color:#FFFFFF; background-color:#5e5f5d; border-color:#6c6d6a; padding:6px;}
-.btn2:hover, .btn2.inverse{color:inherit; background-color:transparent; border:1px solid #4b4b4b; padding:6px; margin-left: 348px;}
+.btn2:hover, .btn2.inverse{color:inherit; background-color:transparent; border:1px solid #4b4b4b; padding:6px;}
 
 
 .btn2{border-radius:1000px;}

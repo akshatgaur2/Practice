@@ -54,3 +54,25 @@
   font-family: monospace;
 
 }
+
+/*----------------------------------------------Button-------------------------------------*/
+
+#pageintro{padding:00px 0;}
+#pageintro article{display:box; max-width:100%; text-transform:capitalize; width:1000px; font-size:20px; }
+#pageintro footer{margin-top:50px;}
+
+.btn2, .btn2.inverse:hover{color:#FFFFFF; background-color:#5e5f5d; border-color:#6c6d6a; padding:6px;}
+.btn2:hover, .btn2.inverse{color:inherit; background-color:transparent; border:1px solid #4b4b4b; padding:6px; margin-left: 348px;}
+
+
+.btn2{border-radius:1000px;}
+
+#footer input, #footer button{border-radius:1px;}
+
+
+#footer input, #footer button{border-color:transparent;}
+
+#footer button{color:#FFFFFF; background-color:#525353;}
+
+.inline li{display:block; margin-bottom:10px; margin-right: 30px;}
+.pushright li{margin-right:0;}

@@ -127,4 +127,4 @@ var TicketInfo=Backbone.View.extend({
 });
 
 var ticketInfo=new TicketInfo({el:$('.table-responsive')});
-localStorage.clear();
+//localStorage.clear();
